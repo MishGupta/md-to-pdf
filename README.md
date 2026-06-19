@@ -2,6 +2,8 @@
 
 Convert any Markdown file to a clean, styled PDF directly from VSCode.
 
+![MD to PDF demo](demo.png)
+
 ## Features
 
 - Convert the active Markdown editor, or right-click a `.md` file in the Explorer.
