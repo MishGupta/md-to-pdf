@@ -17,19 +17,18 @@ This extension works in **VS Code, Cursor, VSCodium, and Windsurf**.
 
 ### Option 1 — Install the `.vsix` file (works in every editor)
 
-1. Download the latest `md-to-pdf-x.x.x.vsix` from the
-   [Releases page](https://github.com/MishGupta/md-to-pdf/releases/latest).
-2. Open your editor's **Extensions** panel (`Cmd/Ctrl+Shift+X`).
-3. Click the **`⋯`** menu at the top-right of the panel → **Install from VSIX…**
-4. Select the downloaded `.vsix` file. Done.
+1. **Download the file.** Go to the
+   [Releases page](https://github.com/MishGupta/md-to-pdf/releases/latest) and, under
+   **Assets**, click `md-to-pdf-0.0.1.vsix` to download it.
+2. **Open the Extensions panel.** Click the Extensions icon in the left sidebar
+   (four squares), or press `Cmd+Shift+X` (Mac) / `Ctrl+Shift+X` (Windows/Linux).
+3. **Install the file.** At the top-right of the Extensions panel, click the `⋯`
+   (three dots) button → choose **Install from VSIX…** → select the file you downloaded.
+4. You'll see a "Completed installing" message. Done. ✅
 
-Or install it from the command line:
+> Prefer the terminal? `code --install-extension md-to-pdf-0.0.1.vsix`
 
-```bash
-code --install-extension md-to-pdf-0.0.1.vsix
-```
-
-### Option 2 — Open VSX (Cursor / VSCodium / Windsurf)
+### Option 2 — Open VSX (one-click in Cursor / VSCodium / Windsurf)
 
 Search **"MD to PDF"** (publisher `mishka`) in the Extensions panel, or visit the
 [Open VSX listing](https://open-vsx.org/extension/mishka/md-to-pdf) and click **Install**.
