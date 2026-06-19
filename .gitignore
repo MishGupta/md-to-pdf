@@ -6,3 +6,6 @@ node_modules
 
 # Social/marketing assets (not part of the extension)
 demo-linkedin.png
+demo.mp4
+check_*.png
+.demo-frames/
