@@ -3,3 +3,6 @@ dist
 node_modules
 .vscode-test/
 *.vsix
+
+# Social/marketing assets (not part of the extension)
+demo-linkedin.png
