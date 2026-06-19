@@ -1,0 +1,70 @@
+{
+  "name": "md-to-pdf",
+  "displayName": "MD to PDF",
+  "description": "Convert Markdown files to PDF",
+  "version": "0.0.1",
+  "publisher": "mishka",
+  "icon": "icon.png",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MishGupta/md-to-pdf.git"
+  },
+  "bugs": {
+    "url": "https://github.com/MishGupta/md-to-pdf/issues"
+  },
+  "homepage": "https://github.com/MishGupta/md-to-pdf#readme",
+  "engines": {
+    "vscode": "^1.119.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "keywords": [
+    "markdown",
+    "pdf",
+    "md",
+    "convert",
+    "export"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "mishka.md-to-pdf.convert",
+        "title": "Convert Markdown to PDF"
+      }
+    ],
+    "menus": {
+      "explorer/context": [
+        {
+          "command": "mishka.md-to-pdf.convert",
+          "when": "resourceExtname == .md",
+          "group": "navigation"
+        }
+      ]
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "npm run compile && npm run lint",
+    "lint": "eslint src",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@types/markdown-it": "^14.1.2",
+    "@types/mocha": "^10.0.10",
+    "@types/node": "^22.19.21",
+    "@types/vscode": "^1.119.0",
+    "@vscode/test-cli": "^0.0.12",
+    "@vscode/test-electron": "^2.5.2",
+    "eslint": "^9.39.3",
+    "typescript": "^5.9.3",
+    "typescript-eslint": "^8.56.1"
+  },
+  "dependencies": {
+    "markdown-it": "^14.2.0",
+    "puppeteer": "^25.1.0"
+  }
+}
